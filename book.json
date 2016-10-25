@@ -1,0 +1,16 @@
+{
+    "title": "skill-tree",
+    "links": {
+        "sidebar": {
+            "Home": "http://mazhuang.org"
+        }
+    },
+    "plugins": [
+        "github"
+    ],
+    "pluginsConfig": {
+        "github": {
+            "url": "https://github.com/mzlogin/skill-tree"
+        }
+    }
+}
