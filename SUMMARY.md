@@ -1,6 +1,6 @@
 # Summary
 
-第一部分 计算机基础
+第一部分 基础知识
 
 * [操作系统](basis/os/README.md)
     * [进程](basis/os/process.md)
