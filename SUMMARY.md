@@ -1,13 +1,35 @@
 # Summary
 
 第一部分 基础知识
-
 * [操作系统](basis/os/README.md)
     * [进程](basis/os/process.md)
     * [线程](basis/os/thread.md)
     * [内存管理](basis/os/memory.md)
-
+* [设计模式](basis/dp/README.md)
+    * [简单工厂模式](basis/dp/simple-factory.md)
+    * [工厂方法模式](basis/dp/factory-method.md)
+    * [抽象工厂模式](basis/dp/abstract-factory.md)
+    * [创建者模式](basis/dp/builder.md)
+    * [原型模式](basis/dp/prototype.md)
+    * [单例模式](basis/dp/singleton.md)
+    * [外观模式](basis/dp/facade.md)
+    * [适配器模式](basis/dp/adapter.md)
+    * [代理模式](basis/dp/proxy.md)
+    * [装饰模式](basis/dp/decorator.md)
+    * [桥模式](basis/dp/bridge.md)
+    * [组合模式](basis/dp/composite.md)
+    * [享元模式](basis/dp/flyweight.md)
+    * [模板方法模式](basis/dp/template-method.md)
+    * [观察者模式](basis/dp/observer.md)
+    * [状态模式](basis/dp/state.md)
+    * [策略模式](basis/dp/strategy.md)
+    * [职责链模式](basis/dp/chain-of-responsibility.md)
+    * [命令模式](basis/dp/command.md)
+    * [访问者模式](basis/dp/visitor.md)
+    * [调停者模式](basis/dp/mediator.md)
+    * [备忘录模式](basis/dp/memento.md)
+    * [迭代器模式](basis/dp/iterator.md)
+    * [解释器模式](basis/dp/interpreter.md)
 第二部分 Android 技能树
-
 * [Java](android/java/README.md)
     * [语言基础](android/java/basis.md)
