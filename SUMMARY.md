@@ -1,6 +1,6 @@
 # Summary
 
-第一部分 基础知识
+* 第一部分 基础知识
 * [操作系统](basis/os/README.md)
     * [进程](basis/os/process.md)
     * [线程](basis/os/thread.md)
@@ -30,6 +30,9 @@
     * [备忘录模式](basis/dp/memento.md)
     * [迭代器模式](basis/dp/iterator.md)
     * [解释器模式](basis/dp/interpreter.md)
-第二部分 Android 技能树
+* 第二部分 Android 技能树
 * [Java](android/java/README.md)
     * [语言基础](android/java/basis.md)
+* [AOSP](android/aosp/README.md)
+    * [View](android/aosp/view/README.md)
+        * [ImageView](android/aosp/view/imageview.md)
