@@ -36,3 +36,5 @@
 * [AOSP](android/aosp/README.md)
     * [View](android/aosp/view/README.md)
         * [ImageView](android/aosp/view/imageview.md)
+* [工具](android/tools/README.md)
+    * [构建](android/tools/build/README.md)

@@ -1,6 +1,6 @@
 # skill-tree
 
-:palm_tree: 期一日，汝参天。
+期一日，汝参天。
 
 电子书阅读地址：<http://mazhuang.org/skill-tree/>
 
