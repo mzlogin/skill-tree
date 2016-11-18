@@ -43,5 +43,6 @@
         * [BroadcastReceiver](android/aosp/components/broadcastreceiver.md)
         * [Fragment](android/aosp/components/fragment.md)
         * [Intent](android/aosp/components/intent.md)
+* [插件化](android/plugin/README.md)
 * [工具](android/tools/README.md)
     * [构建](android/tools/build/README.md)
