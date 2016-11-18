@@ -14,7 +14,7 @@
 
 ### 生命周期回调
 
-![Activity Lifecycle](assets/activty-lifecycle.gif)
+![Activity Lifecycle](assets/activty-lifecycle.png)
 
 ### 需要注意的点
 
