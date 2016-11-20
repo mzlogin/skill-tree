@@ -9,4 +9,4 @@
 
 ## tcp 三次握手
 
-![tcp shakes](./assets/tcp-shakes.png)
+![three times handshake](./assets/three-times-handshake.png)
