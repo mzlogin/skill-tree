@@ -3,10 +3,18 @@
 **目录**
 
 <!-- vim-markdown-toc GFM -->
-* [tcp 三次握手](#tcp-三次握手)
+* [TCP](#tcp)
+    * [三次握手](#三次握手)
+    * [四次挥手](#四次挥手)
 
 <!-- vim-markdown-toc -->
 
-## tcp 三次握手
+## TCP
 
-![three times handshake](./assets/three-times-handshake.png)
+### 三次握手
+
+![three-way handshake](./assets/three-way-handshake.png)
+
+### 四次挥手
+
+![four-way handshake](./assets/four-way-handshake.png)
