@@ -7,6 +7,7 @@
     * [生命周期回调](#生命周期回调)
     * [需要注意的点](#需要注意的点)
 * [Activity 设计的好处](#activity-设计的好处)
+* [如何一次终止所有 Activity](#如何一次终止所有-activity)
 
 <!-- vim-markdown-toc -->
 
@@ -29,3 +30,32 @@
 * 不可见状态就停止活动，节约系统资源。
 
 * 用栈管理，切换行为符合用户心理预期。
+
+## 如何一次终止所有 Activity
+
+可以使用 Intent.FLAG_ACTIVITY_CLEAR_TOP 调用栈底的 Activity，然后用一个标记让它 finish 自己。
+
+```java
+Intent intent = new Intent(this, BottomActivity.class);
+intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+intent.putExtra(FINISH_ALL, true);
+startActivity(intent);
+```
+
+或者用一个自定义的比较土的思路：
+
+```java
+class BaseActivity extends Activity {
+    public static boolean sKillAll = false;
+
+    @Override
+        protected void onResume() {
+            super.onResume();
+            if (sKillAll) {
+                finish();
+            }
+        }
+}
+```
+
+在想要终止所有 Activity 时，栈顶 Activity 将 BaseActivity.sKillAll 置为 true，然后 finish 自己。
