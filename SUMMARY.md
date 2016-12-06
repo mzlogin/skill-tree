@@ -38,6 +38,7 @@
     * [语言基础](android/java/basis.md)
     * [JVM](android/java/jvm.md)
     * [多线程](android/java/threads.md)
+    * [内部类](android/java/internal-class.md)
 * [AOSP](android/aosp/README.md)
     * [View](android/aosp/view/README.md)
         * [ImageView](android/aosp/view/imageview.md)
