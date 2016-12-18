@@ -7,6 +7,7 @@
     * [线程](basis/os/thread.md)
     * [内存管理](basis/os/memory.md)
     * [I/O 模型](basis/os/io.md)
+    * [线程安全与可重入](basis/os/thread-safe-and-reentrant.md)
 * [网络](basis/network/README.md)
 * [设计模式](basis/dp/README.md)
     * [简单工厂模式](basis/dp/simple-factory.md)
