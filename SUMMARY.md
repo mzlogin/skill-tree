@@ -50,6 +50,7 @@
         * [BroadcastReceiver](android/aosp/components/broadcastreceiver.md)
         * [Fragment](android/aosp/components/fragment.md)
         * [Intent](android/aosp/components/intent.md)
+    * [动画](android/aosp/animation.md)
     * [体系结构](android/aosp/arch.md)
     * [ART 与 Dalvik 的区别](android/aosp/art-and-dalvik.md)
 * [插件化](android/plugin/README.md)
