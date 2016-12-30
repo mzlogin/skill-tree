@@ -8,10 +8,10 @@
         * [引用计数算法](#引用计数算法)
         * [可达性分析算法](#可达性分析算法)
     * [垃圾收集算法](#垃圾收集算法)
-        * [标记-清除算法（Mark-Sweep）](#标记-清除算法mark-sweep)
-        * [复制算法（Copying）](#复制算法copying)
-        * [标记-整理算法（Mark-Compact）](#标记-整理算法mark-compact)
-        * [分代收集算法（Generational Collection）](#分代收集算法generational-collection)
+        * [标记-清除算法(Mark-Sweep)](#标记-清除算法mark-sweep)
+        * [复制算法(Copying)](#复制算法copying)
+        * [标记-整理算法(Mark-Compact)](#标记-整理算法mark-compact)
+        * [分代收集算法(Generational Collection)](#分代收集算法generational-collection)
 * [类加载机制](#类加载机制)
     * [类的生命周期](#类的生命周期)
     * [准备阶段](#准备阶段)
@@ -52,7 +52,7 @@
 
 ### 垃圾收集算法
 
-#### 标记-清除算法（Mark-Sweep）
+#### 标记-清除算法(Mark-Sweep)
 
 首先标记出所有需要回收的对象，在标记完成后统一回收所有被标记的对象。
 
@@ -70,7 +70,7 @@
 
 *图 1: 标记-清除算法示意图*
 
-#### 复制算法（Copying）
+#### 复制算法(Copying)
 
 将内存划分为两块，每次只使用其中一块。当这一块的内存用完了，就将还存活着的对象复制到另外一块上，然后将已使用过的内存空间一次清理掉。
 
@@ -84,7 +84,7 @@ HotSpot 中采用 Eden:Survivor:Survivor 比例 8:1:1 来划分空间，每次�
 
 *图 2：复制算法示意图*
 
-#### 标记-整理算法（Mark-Compact）
+#### 标记-整理算法(Mark-Compact)
 
 一般用于老年代。
 
@@ -94,7 +94,7 @@ HotSpot 中采用 Eden:Survivor:Survivor 比例 8:1:1 来划分空间，每次�
 
 *图 3：标记-整理算法示意图*
 
-#### 分代收集算法（Generational Collection）
+#### 分代收集算法(Generational Collection)
 
 根据对象存活周期的不同将内存划分为几块，一般是把 Java 堆分为新生代和老年代。在新生代中，采用复制算法；在老年代中，使用标记-清除或标记-整理算法。
 
@@ -102,9 +102,9 @@ HotSpot 中采用 Eden:Survivor:Survivor 比例 8:1:1 来划分空间，每次�
 
 ### 类的生命周期
 
-加载（Loading）-验证（Verification）-准备（Preparation）-解析（Resolution）-初始化（Initialization）-使用（Using）-卸载（Unloading）。
+加载（Loading）-连接（Linking）-初始化（Initialization）-使用（Using）-卸载（Unloading）。
 
-其中验证、准备、解析统称为连接（Linking）。
+其中连接（Linking）又可分为验证（Verification）-准备（Preparation）-解析（Resolution）三个阶段。
 
 虚拟机规范严格规定了有且仅有 5 种情况必须立即进行类初始化：
 

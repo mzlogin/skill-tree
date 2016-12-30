@@ -15,17 +15,17 @@
 
 ### 使用 PackageManager 返回能接受特定 Intent 的组件
 
-* [queryIntentActivities()](https://developer.android.com/reference/android/content/pm/PackageManager.html#queryIntentActivities(android.content.Intent, int))
+* [queryIntentActivities()](https://developer.android.com/reference/android/content/pm/PackageManager.html#queryIntentActivities(android.content.Intent, int\))
 
-* [queryIntentServices()](https://developer.android.com/reference/android/content/pm/PackageManager.html#queryIntentServices(android.content.Intent, int))
+* [queryIntentServices()](https://developer.android.com/reference/android/content/pm/PackageManager.html#queryIntentServices(android.content.Intent, int\))
 
-* [queryBroadcastReceivers()](https://developer.android.com/reference/android/content/pm/PackageManager.html#queryBroadcastReceivers(android.content.Intent, int))
+* [queryBroadcastReceivers()](https://developer.android.com/reference/android/content/pm/PackageManager.html#queryBroadcastReceivers(android.content.Intent, int\))
 
 ### 判断是否有 Activity 能处理 Intent
 
-* [Intent.resolveActivity()](https://developer.android.com/reference/android/content/Intent.html#resolveActivity(android.content.pm.PackageManager))
+* [Intent.resolveActivity()](https://developer.android.com/reference/android/content/Intent.html#resolveActivity(android.content.pm.PackageManager\))
 
-* [Intent.resolveActivityInfo()](https://developer.android.com/reference/android/content/Intent.html#resolveActivityInfo(android.content.pm.PackageManager, int))
+* [Intent.resolveActivityInfo()](https://developer.android.com/reference/android/content/Intent.html#resolveActivityInfo(android.content.pm.PackageManager, int\))
 
 ### 强制使用应用选择器
 
