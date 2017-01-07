@@ -53,6 +53,7 @@
     * [动画](android/aosp/animation.md)
     * [体系结构](android/aosp/arch.md)
     * [ART 与 Dalvik 的区别](android/aosp/art-and-dalvik.md)
+    * [进程间通信](android/aosp/ipc.md)
 * [插件化](android/plugin/README.md)
 * [架构模式](android/arch/README.md)
 * [工具](android/tools/README.md)
