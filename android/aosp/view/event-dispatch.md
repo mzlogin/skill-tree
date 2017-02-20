@@ -24,7 +24,9 @@ public boolean dispatchTouchEvent(MotionEvent ev) {
     if (onInterceptTouchEvent(ev)) {
         if (mOnTouchListener != null) {
             consume = mOnTouchListener.onTouch(this, ev);
-        } else {
+        }
+
+        if (!consume) {
             consume = onTouchEvent(ev); // may call OnClickListener.onClick
         }
     } else {
