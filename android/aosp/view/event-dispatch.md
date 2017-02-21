@@ -16,7 +16,7 @@
 
     处理点击事件，返回值表示是否消耗当前事件，如果不消耗，则在同一个事件序列中，当前 View 无法再次接收到事件。
 
-根据《Android 开发艺术探索》里的描述，可以用下面这样一段伪代码来表示事件分发机制：
+根据《Android 开发艺术探索》里的描述和我自己对源码的解读，可以用下面这样一段伪代码来表示事件分发机制：
 
 ```java
 public boolean dispatchTouchEvent(MotionEvent ev) {
@@ -30,7 +30,15 @@ public boolean dispatchTouchEvent(MotionEvent ev) {
             consume = onTouchEvent(ev); // may call OnClickListener.onClick
         }
     } else {
-        consume = child.dispatchTouchEvent(ev);
+        for (View child: mChildren) {
+            if (consume = child.dispatchTouchEvent(ev)) {
+                break;
+            }
+        }
+    }
+
+    if (!consume) {
+        consume = super.dispatchTouchEvent(ev);
     }
 
     return consume;
