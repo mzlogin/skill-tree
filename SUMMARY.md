@@ -9,6 +9,7 @@
     * [I/O 模型](basis/os/io.md)
     * [线程安全与可重入](basis/os/thread-safe-and-reentrant.md)
 * [网络](basis/network/README.md)
+* [面向对象](basis/oop/README.md)
 * [设计模式](basis/dp/README.md)
     * [简单工厂模式](basis/dp/simple-factory.md)
     * [工厂方法模式](basis/dp/factory-method.md)
