@@ -7,6 +7,7 @@
     * [使用 PackageManager 返回能接受特定 Intent 的组件](#使用-packagemanager-返回能接受特定-intent-的组件)
     * [判断是否有 Activity 能处理 Intent](#判断是否有-activity-能处理-intent)
     * [强制使用应用选择器](#强制使用应用选择器)
+    * [点击链接启动其它应用](#点击链接启动其它应用)
 * [参考](#参考)
 
 <!-- vim-markdown-toc -->
@@ -44,6 +45,10 @@ if (sendIntent.resolveActivity(getPackageManager()) != null) {
     startActivity(chooser);
 }
 ```
+
+### 点击链接启动其它应用
+
+通过 Intent 实现，需要其它应用注册了对应的 intent-filter，包括 action、category 及 data（schema、host、pathPrefix）和 mimeType 等。
 
 ## 参考
 

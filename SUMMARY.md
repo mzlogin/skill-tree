@@ -60,6 +60,7 @@
     * [进程间通信](android/aosp/ipc.md)
     * [Context](android/aosp/context.md)
     * [更新 UI](android/aosp/update-ui.md)
+    * [消息机制](android/aosp/messages.md)
 * [插件化](android/plugin/README.md)
 * [架构模式](android/arch/README.md)
 * [屏幕适配](android/screens-support/README.md)

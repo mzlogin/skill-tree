@@ -34,7 +34,9 @@
 
 * 注册一些系统广播事件拉活服务；
 
-* 守护进程。
+* Native 守护进程或 Service 守护，轮询状态，检测到进程结束就启动；
+
+* 两个分别运行在独立进程里的 Service，相互绑定，在一个服务被杀死后，另一个会被调用到 onServiceDisconnected，在里面调用 startService 和 bindService 启动对方。
 
 ## 参考
 

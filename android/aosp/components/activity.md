@@ -9,6 +9,7 @@
 * [Activity 的 LaunchMode](#activity-的-launchmode)
 * [Activity 设计的好处](#activity-设计的好处)
 * [如何一次终止所有 Activity](#如何一次终止所有-activity)
+* [Activity 实例泄漏](#activity-实例泄漏)
 
 <!-- vim-markdown-toc -->
 
@@ -70,3 +71,7 @@ class BaseActivity extends Activity {
 ```
 
 在想要终止所有 Activity 时，栈顶 Activity 将 BaseActivity.sKillAll 置为 true，然后 finish 自己。
+
+## Activity 实例泄漏
+
+Activity 实例泄漏时（实例被长于它的对象持有），按 back 键时 onDestroy 仍会被调用到。回到它的实例是 GC 的事情，GC 和 Android 的生命周期方法回调是两回事。
