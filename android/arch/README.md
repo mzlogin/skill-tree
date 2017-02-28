@@ -8,6 +8,7 @@
     * [MVP](#mvp)
     * [MVVM](#mvvm)
     * [The Clean Architecture](#the-clean-architecture)
+* [有价值的文章](#有价值的文章)
 * [参考](#参考)
 
 <!-- vim-markdown-toc -->
@@ -21,6 +22,10 @@
 ### MVVM
 
 ### The Clean Architecture
+
+## 有价值的文章
+
+* [Android架构思考(模块化、多进程)](http://blog.spinytech.com/2016/12/28/android_modularization/)
 
 ## 参考
 
