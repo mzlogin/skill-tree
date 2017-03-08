@@ -8,4 +8,4 @@
 
 2. Activity 的 runOnUiThread 方法。
 
-3. View.post(Runnable) 方法。
+3. View 的 post / postDelayed / postOnAnimation / postOnAnimationDelayed 方法，可以传一个 Runnable（可能还有一个 delayMillis）作为参数。
