@@ -6,6 +6,7 @@
     * [限制为单行](#限制为单行)
     * [更改背景为底部一条线](#更改背景为底部一条线)
     * [更换光标颜色](#更换光标颜色)
+    * [解决获取到焦点后光标自动跳到最前面的问题](#解决获取到焦点后光标自动跳到最前面的问题)
 
 <!-- vim-markdown-toc -->
 
@@ -85,4 +86,11 @@ drawable/edittext_cursor.xml
     <size android:width="1dp" />
     <solid android:color="@android:color/holo_green_dark" />
 </shape>
+```
+
+### 解决获取到焦点后光标自动跳到最前面的问题
+
+```java
+editText.setText(content);
+editText.setSelection(content.length());
 ```

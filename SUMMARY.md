@@ -45,6 +45,7 @@
     * [View](android/aosp/view/README.md)
         * [Button](android/aosp/view/button.md)
         * [CheckBox](android/aosp/view/checkbox.md)
+        * [Dialog](android/aosp/view/dialog.md)
         * [EditText](android/aosp/view/edittext.md)
         * [ImageView](android/aosp/view/imageview.md)
         * [ListView](android/aosp/view/listview.md)

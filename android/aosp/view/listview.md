@@ -1,5 +1,15 @@
 # ListView
 
+<!-- vim-markdown-toc GFM -->
+* [优化 ListView 使用的方法](#优化-listview-使用的方法)
+* [如何防止异步加载图片闪烁错位的问题](#如何防止异步加载图片闪烁错位的问题)
+* [CheckBox 选中状态错位的问题](#checkbox-选中状态错位的问题)
+* [ListView 与 RecyclerView 比较](#listview-与-recyclerview-比较)
+* [添加 HeaderView](#添加-headerview)
+* [参考](#参考)
+
+<!-- vim-markdown-toc -->
+
 ## 优化 ListView 使用的方法
 
 1. 利用好 convertView 来重用 View。
@@ -47,6 +57,10 @@
 * RecyclerView 提供的是 addOnItemTouchLister，而 ListView 直接提供了 click、long click 和 select 的处理。
 
 * RecyclerView 支持嵌套滚动机制。
+
+## 添加 HeaderView
+
+在 API 17 及以前，addHeaderView 需要在 setAdapter 之前设置，分析见 <http://blog.csdn.net/mtt1987/article/details/38535249>。
 
 ## 参考
 

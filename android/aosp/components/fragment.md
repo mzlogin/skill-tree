@@ -14,6 +14,14 @@
 
 ![fragment lifecycle](./assets/fragment-lifecycle.png)
 
+* 在 Fragment 从 BackStack 恢复时，Fragment 对象本身没有销毁，但它里面的 View 销毁重建了。
+
+    保存并恢复 View 的数据的最佳实践是让每个 View 都自己实现了 onSaveInstanceState/onRestoreInstanceState。
+    
+    对于 ListView，其实在销毁重建 View 时调用 onCreateView 时，保存的 Fragment 实例里的 mAdapter 并没有销毁，所以可以直接使用里面保存的数据，不用再 new 一个。
+
+    参考：[The Real Best Practices to Save/Restore Activity's and Fragment's state.](https://inthecheesefactory.com/blog/fragment-state-saving-best-practices/en)
+
 ## 对应 Activity 状态的 Callbacks
 
 ![activity state and fragment callbacks](./assets/activity-state-and-fragment-callbacks.png)
