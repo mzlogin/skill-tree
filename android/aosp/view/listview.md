@@ -6,6 +6,7 @@
 * [CheckBox 选中状态错位的问题](#checkbox-选中状态错位的问题)
 * [ListView 与 RecyclerView 比较](#listview-与-recyclerview-比较)
 * [添加 HeaderView](#添加-headerview)
+* [数据更新后自动滚动到底部](#数据更新后自动滚动到底部)
 * [参考](#参考)
 
 <!-- vim-markdown-toc -->
@@ -38,9 +39,9 @@
 
 ## CheckBox 选中状态错位的问题
 
-因为 View 利用引起。将每个 entity 对应的选中状态保存，在 getView 的时候都检查和设置 checkBox 的状态。可以在 entity 中保存状态，也可以额外使用一个 SparseArray 来存储。
+因为 View 复用引起。将每个 entity 对应的选中状态保存，在 getView 的时候都检查和设置 checkBox 的状态。可以在 entity 中保存状态，也可以额外使用一个 SparseArray 来存储。
 
-*PS：其实这都不能算是个问题，设计良好的程序当然会考虑到这个情况，但网上对此的讨论却非常多，sign。*
+*PS：其实这都不能算是个问题，设计良好的程序当然会考虑到这个情况，但网上对此的讨论却非常多，sigh。*
 
 ## ListView 与 RecyclerView 比较
 
@@ -61,6 +62,19 @@
 ## 添加 HeaderView
 
 在 API 17 及以前，addHeaderView 需要在 setAdapter 之前设置，分析见 <http://blog.csdn.net/mtt1987/article/details/38535249>。
+
+## 数据更新后自动滚动到底部
+
+```xml
+android:stackFromBottom="true"
+android:transcriptMode="alwaysScroll"
+```
+
+or
+
+```java
+listView.setTranscriptMode(ListView.TRANSCRIPT_MODE_ALWAYS_SCROLL);
+```
 
 ## 参考
 
