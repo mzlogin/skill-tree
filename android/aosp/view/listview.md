@@ -80,3 +80,4 @@ listView.setTranscriptMode(ListView.TRANSCRIPT_MODE_ALWAYS_SCROLL);
 
 * [优化 listview 有哪些方法？ - 知乎](https://www.zhihu.com/question/19703384)
 * [RecyclerView 和 ListView 使用对比分析](http://www.jianshu.com/p/f592f3715ae2)
+* [Listview Scroll to the end of the list after updating the list](https://stackoverflow.com/questions/3606530/listview-scroll-to-the-end-of-the-list-after-updating-the-list)
