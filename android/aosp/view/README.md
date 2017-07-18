@@ -3,12 +3,29 @@
 **目录**
 
 <!-- vim-markdown-toc GFM -->
+* [工作流程](#工作流程)
 * [双缓冲机制](#双缓冲机制)
 * [View 与 SurfaceView](#view-与-surfaceview)
 * [GPU 过度绘制](#gpu-过度绘制)
 * [参考](#参考)
 
 <!-- vim-markdown-toc -->
+
+## 工作流程
+
+主要是 measure、layout、draw 三大流程，即测量、布局和绘制，其中 measure 确定 View 的测量宽/高，layout 确定 View 的最终宽高和四个顶点的位置，而 draw 则将 View 绘制到屏幕上。
+
+* View 的最终大小是在 layout 阶段确定的，但是几乎所有情况下 View 的测量大小和最终大小是相等的。
+
+* View 的绘制过程分以下几步：
+
+    1. 绘制背景 background.draw(canvas)
+
+    2. 绘制自己（onDraw）
+
+    3. 绘制 children（dispatchDraw）
+
+    4. 绘制装饰（onDrawScrollbars）
 
 ## 双缓冲机制
 
