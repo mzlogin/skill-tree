@@ -49,6 +49,7 @@
         * [EditText](android/aosp/view/edittext.md)
         * [ImageView](android/aosp/view/imageview.md)
         * [ListView](android/aosp/view/listview.md)
+        * [RecyclerView](android/aosp/view/recyclerview.md)
         * [TabLayout](android/aosp/view/tablayout.md)
         * [TextView](android/aosp/view/textview.md)
         * [WebView](android/aosp/view/webview.md)

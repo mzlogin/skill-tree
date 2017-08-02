@@ -5,6 +5,7 @@
     * [限制为单行](#限制为单行)
     * [文字过长时省略或跑马灯](#文字过长时省略或跑马灯)
     * [添加边框](#添加边框)
+    * [一个大的 TextView 里文字居中](#一个大的-textview-里文字居中)
 
 <!-- vim-markdown-toc -->
 
@@ -39,4 +40,13 @@ drawable/text_border.xml
     <solid android:color="@android:color/transparent" />
     <stroke android:color="#cccccc" android:width="1px" />
 </shape>
+```
+
+### 一个大的 TextView 里文字居中
+
+```xml
+<TextView
+    ...
+    android:gravity="center"
+    ... />
 ```
