@@ -29,3 +29,4 @@ ART 里引入了提前编译，在安装应用时采用更严格的校验机制�
 ## 参考
 
 * [ART and Dalvik](https://source.android.com/devices/tech/dalvik/)
+* [Android 5.0 行为变更](https://developer.android.com/about/versions/android-5.0-changes.html)
