@@ -7,6 +7,7 @@
     * [MVC](#mvc)
     * [MVP](#mvp)
     * [MVVM](#mvvm)
+    * [Flux](#flux)
     * [The Clean Architecture](#the-clean-architecture)
 * [有价值的文章](#有价值的文章)
 * [参考](#参考)
@@ -20,6 +21,11 @@
 ### MVP
 
 ### MVVM
+
+### Flux
+
+* <https://facebook.github.io/flux/>
+* <http://androidflux.github.io/docs/overview.html>
 
 ### The Clean Architecture
 
