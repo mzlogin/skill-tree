@@ -2,11 +2,14 @@
 
 
 <!-- vim-markdown-toc GFM -->
+
 * [常见问题及解决方案](#常见问题及解决方案)
     * [限制为单行](#限制为单行)
     * [更改背景为底部一条线](#更改背景为底部一条线)
     * [更换光标颜色](#更换光标颜色)
     * [解决获取到焦点后光标自动跳到最前面的问题](#解决获取到焦点后光标自动跳到最前面的问题)
+    * [限制只能输入数字，最大长度为 9 位](#限制只能输入数字最大长度为-9-位)
+    * [限制只能输入 IP 地址](#限制只能输入-ip-地址)
 
 <!-- vim-markdown-toc -->
 
@@ -68,7 +71,6 @@ drawable/edittext_focused.xml
 
 ### 更换光标颜色
 
-
 layout/xxx.xml
 
 ```xml
@@ -93,4 +95,59 @@ drawable/edittext_cursor.xml
 ```java
 editText.setText(content);
 editText.setSelection(content.length());
+```
+
+### 限制只能输入数字，最大长度为 9 位
+
+```xml
+<EditText
+    ...
+    android:inputType="number"
+    android:digits="0123456789"
+    android:maxLength="9"
+    ...
+/>
+```
+
+### 限制只能输入 IP 地址
+
+```java
+EditText ipEditText = (EditText) root.findViewById(R.id.ip_address);
+
+InputFilter[] filters = new InputFilter[1];
+filters[0] = new InputFilter() {
+    @Override
+    public CharSequence filter(CharSequence source, int start,
+                               int end, Spanned dest, int dstart, int dend) {
+        if (end > start) {
+            String destTxt = dest.toString();
+            String resultingTxt = destTxt.substring(0, dstart) +
+                    source.subSequence(start, end) +
+                    destTxt.substring(dend);
+            if (!resultingTxt.matches ("^\\d{1,3}(\\." +
+                    "(\\d{1,3}(\\.(\\d{1,3}(\\.(\\d{1,3})?)?)?)?)?)?")) {
+                return "";
+            } else {
+                String[] splits = resultingTxt.split("\\.");
+                for (int i=0; i<splits.length; i++) {
+                    if (Integer.valueOf(splits[i]) > 255) {
+                        return "";
+                    }
+                }
+            }
+        }
+        return null;
+    }
+};
+ipEditText.setFilters(filters);
+```
+
+顺便给一个校验 IP 地址是否有效的工具方法：
+
+```java
+public static boolean isIpAddress(String text) {
+    Pattern p = Pattern.compile("^(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$");
+    Matcher m = p.matcher(text);
+    return m.find();
+}
 ```
