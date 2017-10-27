@@ -41,7 +41,10 @@
 
 只配置一个 `orientation` 并不能生效，实际原因还需要好好探究一番，网上很多博客里说的配置了 `configChanges` 之后生命周期不会有变化，只是 onConfigurationChanged 会被调用到、`keyboardHidden|orientation` 会阻止生命周期销毁重建等都不准确。
 
-参考：<https://developer.android.com/reference/android/R.attr.html#configChanges>
+参考：
+
+* <https://developer.android.com/reference/android/app/Activity.html#ConfigurationChanges>
+* <https://developer.android.com/reference/android/R.attr.html#configChanges>
 
 ## Activity 的 LaunchMode
 
