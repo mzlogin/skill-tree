@@ -3,9 +3,11 @@
 **目录**
 
 <!-- vim-markdown-toc GFM -->
+
 * [生命周期](#生命周期)
     * [生命周期回调](#生命周期回调)
     * [需要注意的点](#需要注意的点)
+    * [configChanges](#configchanges)
 * [Activity 的 LaunchMode](#activity-的-launchmode)
 * [Activity 设计的好处](#activity-设计的好处)
 * [如何一次终止所有 Activity](#如何一次终止所有-activity)
@@ -24,6 +26,22 @@
 1. 如果有数据需要持久化，在 onPause() 的时候就做，因为 onStop() 返回之后 Activity 随时可能被杀死，而在 Pre-HONEYCOMB 版本里 onPause() 返回之后就可能被杀死。
 
 2. onSaveInstanceState(Bundle) 的调用时机是 Activity 被杀掉之前，onStop() 之前，但因为它不是生命周期回调函数，所以并不能确保所有情况都能被调用到。
+
+### configChanges
+
+要特别注意配置变化对生命周期的影响。
+
+如果想屏幕方向变化时 Activity 不销毁重建，在 AndroidManifest.xml 里配置：
+
+```xml
+<activity
+    android:configChanges="keyboardHidden|orientation|screenSize|locale"
+    ...
+```
+
+只配置一个 `orientation` 并不能生效，实际原因还需要好好探究一番，网上很多博客里说的配置了 `configChanges` 之后生命周期不会有变化，只是 onConfigurationChanged 会被调用到、`keyboardHidden|orientation` 会阻止生命周期销毁重建等都不准确。
+
+参考：<https://developer.android.com/reference/android/R.attr.html#configChanges>
 
 ## Activity 的 LaunchMode
 
