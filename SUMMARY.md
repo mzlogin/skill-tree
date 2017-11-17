@@ -69,7 +69,6 @@
     * [体系结构](android/aosp/arch.md)
     * [消息机制](android/aosp/messages.md)
     * [坐标系](android/aosp/position.md)
-    * [编码技巧](android/aosp/programing-skills.md)
 * [插件化](android/plugin/README.md)
 * [架构模式](android/arch/README.md)
 * [屏幕适配](android/screens-support/README.md)
