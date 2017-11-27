@@ -35,6 +35,8 @@
     * [备忘录模式](basis/dp/memento.md)
     * [迭代器模式](basis/dp/iterator.md)
     * [解释器模式](basis/dp/interpreter.md)
+* [硬件](basis/hardware/README.md)
+    * [串口通信](basis/hardware/serial-port.md)
 * 第二部分 Android 技能树
 * [Java](android/java/README.md)
     * [语言基础](android/java/basis.md)
