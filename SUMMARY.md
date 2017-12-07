@@ -38,6 +38,7 @@
 * [硬件](basis/hardware/README.md)
     * [串口通信](basis/hardware/serial-port.md)
 * 第二部分 Android 技能树
+* [Android 开发技术概述](android/overview.md)
 * [Java](android/java/README.md)
     * [语言基础](android/java/basis.md)
     * [JVM](android/java/jvm.md)
