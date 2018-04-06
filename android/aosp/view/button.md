@@ -1,8 +1,10 @@
 # Button
 
 <!-- vim-markdown-toc GFM -->
+
 * [自定义外观](#自定义外观)
     * [自绘圆形背景](#自绘圆形背景)
+    * [去掉自带阴影](#去掉自带阴影)
 
 <!-- vim-markdown-toc -->
 
@@ -49,3 +51,9 @@ drawable/shape_corners.xml
     <stroke android:color="@android:color/white" android:width="1dp" />
 </shape> 
 ```
+
+### 去掉自带阴影
+
+默认的按钮是带阴影的，可以通过设置 `style="?android:attr/borderlessButtonStyle"` 解决。
+
+参考：<https://developer.android.com/guide/topics/ui/controls/button.html#Borderless>

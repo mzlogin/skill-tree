@@ -3,7 +3,9 @@
 **目录**
 
 <!-- vim-markdown-toc GFM -->
+
 * [工作流程](#工作流程)
+* [Baseline](#baseline)
 * [双缓冲机制](#双缓冲机制)
 * [View 与 SurfaceView](#view-与-surfaceview)
 * [GPU 过度绘制](#gpu-过度绘制)
@@ -26,6 +28,10 @@
     3. 绘制 children（dispatchDraw）
 
     4. 绘制装饰（onDrawScrollbars）
+
+## Baseline
+
+View 的文字的底部对齐线相对 View 顶部的距离，像 ImageView 这种默认没有文字的，需要在 xml 里显式设置 `android:baseline="20dp"`，不然在 RelativeLayout 里的其它 View 想要 `android:layout_alignBaseline="@id/xxx"` 时会不生效。
 
 ## 双缓冲机制
 

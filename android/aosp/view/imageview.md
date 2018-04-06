@@ -3,6 +3,7 @@
 **目录**
 
 <!-- vim-markdown-toc GFM -->
+
 * [src 与 background 的区别](#src-与-background-的区别)
 * [scaleType](#scaletype)
 
