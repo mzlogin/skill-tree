@@ -3,6 +3,7 @@
 **目录**
 
 <!-- vim-markdown-toc GFM -->
+
 * [线程同步机制](#线程同步机制)
     * [synchronized 关键字](#synchronized-关键字)
     * [java.util.concurrent.lock 包中的 Lock 对象](#javautilconcurrentlock-包中的-lock-对象)
@@ -10,6 +11,7 @@
 * [线程池](#线程池)
     * [使用线程池的好处](#使用线程池的好处)
     * [线程池的分类](#线程池的分类)
+* [获取线程堆栈](#获取线程堆栈)
 
 <!-- vim-markdown-toc -->
 
@@ -62,3 +64,23 @@ ReetrantLock 提供了 synchronized 相关的并发性和内存主义，但是�
 4. SingleThreadExecutor
 
     只有一个核心线程，它的意义在于统一所有的任务到一个线程。
+
+## 获取线程堆栈
+
+获取本进程内所有活动线程的堆栈：
+
+```java
+private String getAllStackTraces() {
+    Map<Thread, StackTraceElement[]> stacks = Thread.getAllStackTraces();
+    StringBuilder sb = new StringBuilder();
+    for (Thread key : stacks.keySet()) {
+        StackTraceElement[] stackTraceElements = stacks.get(key);
+        sb.append("\nthread ").append(key.getName());
+        for (StackTraceElement st : stackTraceElements) {
+            sb.append("\n\t").append(st.toString());
+        }
+    }
+
+    return sb.toString();
+}
+```

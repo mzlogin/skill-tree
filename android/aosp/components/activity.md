@@ -58,7 +58,7 @@
 
 ## Activity 设计的好处
 
-* 可以很方便地调起别的 Activity（包括应用内和应用外）并获取调用结果。
+* 可以很方便地调起别的 Activity（包括应用内和应用外）并获取调用结果。这样即使两个 Activity 来自不同的应用，Activity A 调用 Activity B 处理完自己的 Intent，然后返回 Activity A，无缝切换，就像在同一个应用内一样。
 
 * 不可见状态就停止活动，节约系统资源。
 
