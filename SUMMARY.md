@@ -72,6 +72,7 @@
     * [体系结构](android/aosp/arch.md)
     * [消息机制](android/aosp/messages.md)
     * [坐标系](android/aosp/position.md)
+    * [软键盘](android/aosp/softinput.md)
     * [功能实现](android/aosp/functions/README.md)
         * [开机自启动](android/aosp/functions/auto-boot.md)
 * [插件化](android/plugin/README.md)
