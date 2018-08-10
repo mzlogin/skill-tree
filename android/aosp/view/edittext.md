@@ -10,6 +10,7 @@
     * [解决获取到焦点后光标自动跳到最前面的问题](#解决获取到焦点后光标自动跳到最前面的问题)
     * [限制只能输入数字，最大长度为 9 位](#限制只能输入数字最大长度为-9-位)
     * [限制只能输入 IP 地址](#限制只能输入-ip-地址)
+    * [显示隐藏密码](#显示隐藏密码)
 
 <!-- vim-markdown-toc -->
 
@@ -150,4 +151,18 @@ public static boolean isIpAddress(String text) {
     Matcher m = p.matcher(text);
     return m.find();
 }
+```
+
+### 显示隐藏密码
+
+```java
+if (show) {
+    // 显示
+    mPasswordEditText.setTransformationMethod(HideReturnsTransformationMethod.getInstance());
+} else {
+    // 隐藏
+    mPasswordEditText.setTransformationMethod(PasswordTransformationMethod.getInstance());
+}
+
+setInputType 的方法在我尝试的过程中有点问题，表现与预期不一致。
 ```
