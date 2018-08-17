@@ -1,13 +1,17 @@
 # Dialog
 
 <!-- vim-markdown-toc GFM -->
+
 * [AlertDialog](#alertdialog)
+    * [创建一个只有进度条的对话框](#创建一个只有进度条的对话框)
+    * [修改按钮的文字颜色](#修改按钮的文字颜色)
+    * [显示富文本](#显示富文本)
 
 <!-- vim-markdown-toc -->
 
 ## AlertDialog
 
-创建一个只有进度条的对话框：
+### 创建一个只有进度条的对话框
 
 xxx.java
 
@@ -33,4 +37,42 @@ layout/window_loading.xml
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:indeterminate="true" />
+```
+
+### 修改按钮的文字颜色
+
+values/styles.xml
+
+```xml
+<style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <!-- ... -->
+    <item name="buttonBarPositiveButtonStyle">@style/positiveButtonStyle</item>
+    <item name="buttonBarNegativeButtonStyle">@style/negativeButtonStyle</item>
+</style>
+
+<style name="positiveButtonStyle" parent="Base.Widget.AppCompat.Button.ButtonBar.AlertDialog">
+    <item name="android:textColor">@color/zkhRed</item>
+</style>
+
+<style name="negativeButtonStyle" parent="Base.Widget.AppCompat.Button.ButtonBar.AlertDialog">
+    <item name="android:textColor">@color/textNormal</item>
+</style>
+```
+
+参考：[Android-用style修改AlertDialog修改按钮文字颜色](https://blog.csdn.net/u011219729/article/details/78316264?locationNum=4&fps=1)
+
+### 显示富文本
+
+values/strings.xml
+
+```xml
+<string name="test_string"><![CDATA[中间是<font color=\'#ff0000\'>红字</font>哈]]></string>
+```
+
+xx.java
+
+```java
+new AlertDialog.Builder()
+    .setMessage(Html.fromHtml(getString(R.string.test_string)))
+    ...
 ```
