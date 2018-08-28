@@ -1,8 +1,10 @@
 # RecyclerView
 
 <!-- vim-markdown-toc GFM -->
+
 * [常见问题解决](#常见问题解决)
     * [设置 OnItemClickListener](#设置-onitemclicklistener)
+    * [解决 ScrollView 嵌套 RecyclerView 的显示及滑动问题](#解决-scrollview-嵌套-recyclerview-的显示及滑动问题)
 
 <!-- vim-markdown-toc -->
 
@@ -48,3 +50,9 @@ RecyclerView.Adapter mAdapter = new MyAdapter(new MyAdapter.OnItemClickListener(
 });
 mRecyclerView.setAdapter(mAdapter);
 ```
+
+### 解决 ScrollView 嵌套 RecyclerView 的显示及滑动问题
+
+一种方法是使用 NestedScrollView，还有其它方法，
+
+参见 <https://segmentfault.com/a/1190000011553735>
