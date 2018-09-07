@@ -1,11 +1,13 @@
 # TextView
 
 <!-- vim-markdown-toc GFM -->
+
 * [常见问题及解决方案](#常见问题及解决方案)
     * [限制为单行](#限制为单行)
     * [文字过长时省略或跑马灯](#文字过长时省略或跑马灯)
     * [添加边框](#添加边框)
     * [一个大的 TextView 里文字居中](#一个大的-textview-里文字居中)
+    * [drawableRight 和 drawablePadding](#drawableright-和-drawablepadding)
 
 <!-- vim-markdown-toc -->
 
@@ -50,3 +52,16 @@ drawable/text_border.xml
     android:gravity="center"
     ... />
 ```
+
+### drawableRight 和 drawablePadding
+
+drawableRight 就是在 View 的右边，它与文字的间距优先取决于 View 的宽度，也就是说，如果 View 很宽，drawableRight 与文字的间距大于 drawablePadding 的话，drawablePadding 看起来就没有效果。
+
+这种情况下可以：
+
+1. 将 View 宽度设为 wrap_content，这样文字与 drawableRight 就基本挨着了，然后再设置 drawablePadding；
+
+2. 设置 View 的 paddingRight 将 drawable 挤过来，但这样很不灵活；
+
+3. 修改 TextView 的绘制实现。
+
