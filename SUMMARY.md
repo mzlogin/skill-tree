@@ -51,6 +51,7 @@
         * [Dialog](android/aosp/view/dialog.md)
         * [EditText](android/aosp/view/edittext.md)
         * [ImageView](android/aosp/view/imageview.md)
+        * [LinearLayout](android/aosp/view/linearlayout.md)
         * [ListView](android/aosp/view/listview.md)
         * [RecyclerView](android/aosp/view/recyclerview.md)
         * [TabLayout](android/aosp/view/tablayout.md)
