@@ -3,10 +3,12 @@
 **目录**
 
 <!-- vim-markdown-toc GFM -->
+
 * [生命周期](#生命周期)
 * [对应 Activity 状态的 Callbacks](#对应-activity-状态的-callbacks)
 * [遇到的问题](#遇到的问题)
     * [点击穿透](#点击穿透)
+    * [replace 切换后恢复状态](#replace-切换后恢复状态)
 
 <!-- vim-markdown-toc -->
 
@@ -50,3 +52,27 @@
         ......
     }
     ```
+
+### replace 切换后恢复状态
+
+使用 replace 方式切换 Fragment 后，又切换回来，此时 onCreateView 又会被调用到，如果重新 inflate layout，那界面状态会丢失，比如 Fragment 里有 WebView，那它的滚动位置等会丢失掉。
+
+一种解决办法是在 onCreateView 里将 root view 保存下来，下次 onCreateView 被调用到时，判断 root 是否为空，为空就重新 inflate，不为空就直接复用：
+
+```java
+public class MyFragment extends Fragment {
+
+    private View mRoot;
+
+    @Nullable
+        @Override
+        public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+            if (mRoot != null) {
+                return mRoot;
+            } else {
+                // 重新 inflate layout，设置 View 和 data 等
+                // ...
+            }
+        }
+}
+```
