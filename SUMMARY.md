@@ -56,6 +56,7 @@
         * [RecyclerView](android/aosp/view/recyclerview.md)
         * [TabLayout](android/aosp/view/tablayout.md)
         * [TextView](android/aosp/view/textview.md)
+        * [Toolbar](android/aosp/view/toolbar.md)
         * [WebView](android/aosp/view/webview.md)
     * [基础组件](android/aosp/components/README.md)
         * [Activity](android/aosp/components/activity.md)
