@@ -58,6 +58,7 @@
         * [TextView](android/aosp/view/textview.md)
         * [Toolbar](android/aosp/view/toolbar.md)
         * [WebView](android/aosp/view/webview.md)
+        * [ViewPager](android/aosp/view/viewpager.md)
     * [基础组件](android/aosp/components/README.md)
         * [Activity](android/aosp/components/activity.md)
         * [Service](android/aosp/components/service.md)
