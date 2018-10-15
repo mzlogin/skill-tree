@@ -1,0 +1,1519 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>BroadcastReceiver · skill-tree</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="fragment.html" />
+    
+    
+    <link rel="prev" href="contentprovider.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="http://mazhuang.org" target="_blank" class="custom-link">Home</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../../">
+            
+                <a href="../../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    第一部分 基础知识
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../../basis/os/">
+            
+                <a href="../../../basis/os/">
+            
+                    
+                    操作系统
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../../../basis/os/process.html">
+            
+                <a href="../../../basis/os/process.html">
+            
+                    
+                    进程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../../../basis/os/thread.html">
+            
+                <a href="../../../basis/os/thread.html">
+            
+                    
+                    线程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../../../basis/os/memory.html">
+            
+                <a href="../../../basis/os/memory.html">
+            
+                    
+                    内存管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../../../basis/os/io.html">
+            
+                <a href="../../../basis/os/io.html">
+            
+                    
+                    I/O 模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../../../basis/os/thread-safe-and-reentrant.html">
+            
+                <a href="../../../basis/os/thread-safe-and-reentrant.html">
+            
+                    
+                    线程安全与可重入
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../../../basis/network/">
+            
+                <a href="../../../basis/network/">
+            
+                    
+                    网络
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../../../basis/oop/">
+            
+                <a href="../../../basis/oop/">
+            
+                    
+                    面向对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../../../basis/dp/">
+            
+                <a href="../../../basis/dp/">
+            
+                    
+                    设计模式
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../../../basis/dp/simple-factory.html">
+            
+                <a href="../../../basis/dp/simple-factory.html">
+            
+                    
+                    简单工厂模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../../../basis/dp/factory-method.html">
+            
+                <a href="../../../basis/dp/factory-method.html">
+            
+                    
+                    工厂方法模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../../../basis/dp/abstract-factory.html">
+            
+                <a href="../../../basis/dp/abstract-factory.html">
+            
+                    
+                    抽象工厂模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../../../basis/dp/builder.html">
+            
+                <a href="../../../basis/dp/builder.html">
+            
+                    
+                    创建者模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="../../../basis/dp/prototype.html">
+            
+                <a href="../../../basis/dp/prototype.html">
+            
+                    
+                    原型模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="../../../basis/dp/singleton.html">
+            
+                <a href="../../../basis/dp/singleton.html">
+            
+                    
+                    单例模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.7" data-path="../../../basis/dp/facade.html">
+            
+                <a href="../../../basis/dp/facade.html">
+            
+                    
+                    外观模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.8" data-path="../../../basis/dp/adapter.html">
+            
+                <a href="../../../basis/dp/adapter.html">
+            
+                    
+                    适配器模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.9" data-path="../../../basis/dp/proxy.html">
+            
+                <a href="../../../basis/dp/proxy.html">
+            
+                    
+                    代理模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.10" data-path="../../../basis/dp/decorator.html">
+            
+                <a href="../../../basis/dp/decorator.html">
+            
+                    
+                    装饰模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.11" data-path="../../../basis/dp/bridge.html">
+            
+                <a href="../../../basis/dp/bridge.html">
+            
+                    
+                    桥模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.12" data-path="../../../basis/dp/composite.html">
+            
+                <a href="../../../basis/dp/composite.html">
+            
+                    
+                    组合模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.13" data-path="../../../basis/dp/flyweight.html">
+            
+                <a href="../../../basis/dp/flyweight.html">
+            
+                    
+                    享元模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.14" data-path="../../../basis/dp/template-method.html">
+            
+                <a href="../../../basis/dp/template-method.html">
+            
+                    
+                    模板方法模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.15" data-path="../../../basis/dp/observer.html">
+            
+                <a href="../../../basis/dp/observer.html">
+            
+                    
+                    观察者模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.16" data-path="../../../basis/dp/state.html">
+            
+                <a href="../../../basis/dp/state.html">
+            
+                    
+                    状态模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.17" data-path="../../../basis/dp/strategy.html">
+            
+                <a href="../../../basis/dp/strategy.html">
+            
+                    
+                    策略模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.18" data-path="../../../basis/dp/chain-of-responsibility.html">
+            
+                <a href="../../../basis/dp/chain-of-responsibility.html">
+            
+                    
+                    职责链模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.19" data-path="../../../basis/dp/command.html">
+            
+                <a href="../../../basis/dp/command.html">
+            
+                    
+                    命令模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.20" data-path="../../../basis/dp/visitor.html">
+            
+                <a href="../../../basis/dp/visitor.html">
+            
+                    
+                    访问者模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.21" data-path="../../../basis/dp/mediator.html">
+            
+                <a href="../../../basis/dp/mediator.html">
+            
+                    
+                    调停者模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.22" data-path="../../../basis/dp/memento.html">
+            
+                <a href="../../../basis/dp/memento.html">
+            
+                    
+                    备忘录模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.23" data-path="../../../basis/dp/iterator.html">
+            
+                <a href="../../../basis/dp/iterator.html">
+            
+                    
+                    迭代器模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.24" data-path="../../../basis/dp/interpreter.html">
+            
+                <a href="../../../basis/dp/interpreter.html">
+            
+                    
+                    解释器模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../../../basis/hardware/">
+            
+                <a href="../../../basis/hardware/">
+            
+                    
+                    硬件
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../../../basis/hardware/serial-port.html">
+            
+                <a href="../../../basis/hardware/serial-port.html">
+            
+                    
+                    串口通信
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" >
+            
+                <span>
+            
+                    
+                    第二部分 Android 技能树
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../../overview.html">
+            
+                <a href="../../overview.html">
+            
+                    
+                    Android 开发技术概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../../java/">
+            
+                <a href="../../java/">
+            
+                    
+                    Java
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../../java/basis.html">
+            
+                <a href="../../java/basis.html">
+            
+                    
+                    语言基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="../../java/jvm.html">
+            
+                <a href="../../java/jvm.html">
+            
+                    
+                    JVM
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="../../java/threads.html">
+            
+                <a href="../../java/threads.html">
+            
+                    
+                    多线程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4" data-path="../../java/internal-class.html">
+            
+                <a href="../../java/internal-class.html">
+            
+                    
+                    内部类
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    AOSP
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../view/">
+            
+                <a href="../view/">
+            
+                    
+                    View
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1.1" data-path="../view/button.html">
+            
+                <a href="../view/button.html">
+            
+                    
+                    Button
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.1.2" data-path="../view/checkbox.html">
+            
+                <a href="../view/checkbox.html">
+            
+                    
+                    CheckBox
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.1.3" data-path="../view/dialog.html">
+            
+                <a href="../view/dialog.html">
+            
+                    
+                    Dialog
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.1.4" data-path="../view/edittext.html">
+            
+                <a href="../view/edittext.html">
+            
+                    
+                    EditText
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.1.5" data-path="../view/imageview.html">
+            
+                <a href="../view/imageview.html">
+            
+                    
+                    ImageView
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.1.6" data-path="../view/linearlayout.html">
+            
+                <a href="../view/linearlayout.html">
+            
+                    
+                    LinearLayout
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.1.7" data-path="../view/listview.html">
+            
+                <a href="../view/listview.html">
+            
+                    
+                    ListView
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.1.8" data-path="../view/recyclerview.html">
+            
+                <a href="../view/recyclerview.html">
+            
+                    
+                    RecyclerView
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.1.9" data-path="../view/tablayout.html">
+            
+                <a href="../view/tablayout.html">
+            
+                    
+                    TabLayout
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.1.10" data-path="../view/textview.html">
+            
+                <a href="../view/textview.html">
+            
+                    
+                    TextView
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.1.11" data-path="../view/toolbar.html">
+            
+                <a href="../view/toolbar.html">
+            
+                    
+                    Toolbar
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.1.12" data-path="../view/webview.html">
+            
+                <a href="../view/webview.html">
+            
+                    
+                    WebView
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.1.13" data-path="../view/viewpager.html">
+            
+                <a href="../view/viewpager.html">
+            
+                    
+                    ViewPager
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    基础组件
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.2.1" data-path="activity.html">
+            
+                <a href="activity.html">
+            
+                    
+                    Activity
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2.2" data-path="service.html">
+            
+                <a href="service.html">
+            
+                    
+                    Service
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2.3" data-path="contentprovider.html">
+            
+                <a href="contentprovider.html">
+            
+                    
+                    ContentProvider
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.11.2.4" data-path="broadcastreceiver.html">
+            
+                <a href="broadcastreceiver.html">
+            
+                    
+                    BroadcastReceiver
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2.5" data-path="fragment.html">
+            
+                <a href="fragment.html">
+            
+                    
+                    Fragment
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2.6" data-path="intent.html">
+            
+                <a href="intent.html">
+            
+                    
+                    Intent
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="../art-and-dalvik.html">
+            
+                <a href="../art-and-dalvik.html">
+            
+                    
+                    ART 与 Dalvik 的区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="../context.html">
+            
+                <a href="../context.html">
+            
+                    
+                    Context
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.5" data-path="../animation.html">
+            
+                <a href="../animation.html">
+            
+                    
+                    动画
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.6" data-path="../update-ui.html">
+            
+                <a href="../update-ui.html">
+            
+                    
+                    更新 UI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.7" data-path="../ipc.html">
+            
+                <a href="../ipc.html">
+            
+                    
+                    进程间通信
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.8" data-path="../view/event-dispatch.html">
+            
+                <a href="../view/event-dispatch.html">
+            
+                    
+                    事件分发机制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.9" data-path="../arch.html">
+            
+                <a href="../arch.html">
+            
+                    
+                    体系结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.10" data-path="../messages.html">
+            
+                <a href="../messages.html">
+            
+                    
+                    消息机制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.11" data-path="../position.html">
+            
+                <a href="../position.html">
+            
+                    
+                    坐标系
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.12" data-path="../softinput.html">
+            
+                <a href="../softinput.html">
+            
+                    
+                    软键盘
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.13" data-path="../functions/">
+            
+                <a href="../functions/">
+            
+                    
+                    功能实现
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.13.1" data-path="../functions/auto-boot.html">
+            
+                <a href="../functions/auto-boot.html">
+            
+                    
+                    开机自启动
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../../plugin/">
+            
+                <a href="../../plugin/">
+            
+                    
+                    插件化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../../arch/">
+            
+                <a href="../../arch/">
+            
+                    
+                    架构模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../../screens-support/">
+            
+                <a href="../../screens-support/">
+            
+                    
+                    屏幕适配
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../../tools/">
+            
+                <a href="../../tools/">
+            
+                    
+                    工具
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.15.1" data-path="../../tools/build/">
+            
+                <a href="../../tools/build/">
+            
+                    
+                    构建
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../../third-party/">
+            
+                <a href="../../third-party/">
+            
+                    
+                    常用第三方库
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.16.1" data-path="../../third-party/network.html">
+            
+                <a href="../../third-party/network.html">
+            
+                    
+                    网络请求
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16.2" data-path="../../third-party/orm.html">
+            
+                <a href="../../third-party/orm.html">
+            
+                    
+                    ORM
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16.3" data-path="../../third-party/json.html">
+            
+                <a href="../../third-party/json.html">
+            
+                    
+                    Json
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../.." >BroadcastReceiver</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="broadcastreceiver">BroadcastReceiver</h1>
+<!-- vim-markdown-toc GFM -->
+<ul>
+<li><a href="#manifest-declared-receivers-&#x4E0E;-context-registered-receivers-&#x7684;&#x533A;&#x522B;">Manifest-declared receivers &#x4E0E; Context-registered receivers &#x7684;&#x533A;&#x522B;</a></li>
+<li><a href="#&#x5BF9;&#x8FDB;&#x7A0B;&#x72B6;&#x6001;&#x7684;&#x5F71;&#x54CD;">&#x5BF9;&#x8FDB;&#x7A0B;&#x72B6;&#x6001;&#x7684;&#x5F71;&#x54CD;</a></li>
+<li><a href="#&#x6267;&#x884C;&#x65F6;&#x95F4;&#x957F;&#x4E00;&#x70B9;&#x7684;&#x4EFB;&#x52A1;">&#x6267;&#x884C;&#x65F6;&#x95F4;&#x957F;&#x4E00;&#x70B9;&#x7684;&#x4EFB;&#x52A1;</a></li>
+<li><a href="#&#x53D1;&#x9001;&#x5E7F;&#x64AD;">&#x53D1;&#x9001;&#x5E7F;&#x64AD;</a></li>
+<li><a href="#&#x6743;&#x9650;">&#x6743;&#x9650;</a></li>
+<li><a href="#&#x5B89;&#x5168;&#x8003;&#x8651;&#x4E0E;&#x6700;&#x4F73;&#x5B9E;&#x8DF5;">&#x5B89;&#x5168;&#x8003;&#x8651;&#x4E0E;&#x6700;&#x4F73;&#x5B9E;&#x8DF5;</a></li>
+</ul>
+<!-- vim-markdown-toc -->
+<p>&#x4E00;&#x822C;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;onReceive &#x5728; UI &#x7EBF;&#x7A0B;&#x6267;&#x884C;&#xFF0C;&#x4F46;&#x4E5F;&#x53EF;&#x4EE5;&#x5728; registerReceiver &#x65F6;&#x7528; Handler &#x6307;&#x5B9A;&#x8FD0;&#x884C;&#x7684;&#x7EBF;&#x7A0B;&#x3002;</p>
+<h2 id="manifest-declared-receivers-&#x4E0E;-context-registered-receivers-&#x7684;&#x533A;&#x522B;">Manifest-declared receivers &#x4E0E; Context-registered receivers &#x7684;&#x533A;&#x522B;</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Manifest-declared</th>
+<th>Context-registered</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&#x6CE8;&#x518C;&#x65F6;&#x673A;</td>
+<td>&#x5E94;&#x7528;&#x5B89;&#x88C5;&#x65F6;</td>
+<td>&#x8C03;&#x7528; registerReceiver &#x65F6;</td>
+</tr>
+<tr>
+<td>&#x751F;&#x547D;&#x5468;&#x671F;</td>
+<td>onReceive &#x88AB;&#x8C03;&#x7528;&#x671F;&#x95F4;&#x6709;&#x6548;</td>
+<td>&#x53D7;&#x6CE8;&#x518C;&#x65F6;&#x6240;&#x7528;&#x7684; Context &#x751F;&#x547D;&#x5468;&#x671F;&#x5F71;&#x54CD;</td>
+</tr>
+</tbody>
+</table>
+<h2 id="&#x5BF9;&#x8FDB;&#x7A0B;&#x72B6;&#x6001;&#x7684;&#x5F71;&#x54CD;">&#x5BF9;&#x8FDB;&#x7A0B;&#x72B6;&#x6001;&#x7684;&#x5F71;&#x54CD;</h2>
+<p>&#x5728;&#x8C03;&#x7528; onReceive &#x65F6;&#xFF0C;&#x6240;&#x5728;&#x8FDB;&#x7A0B;&#x88AB;&#x5F53;&#x4F5C; foreground process&#xFF1B;onReceive &#x8FD4;&#x56DE;&#x540E;&#xFF0C;&#x6240;&#x5728;&#x8FDB;&#x7A0B;&#x4F1A;&#x88AB;&#x5F53;&#x4F5C;&#x666E;&#x901A;&#x8FDB;&#x7A0B;&#xFF0C;&#x5982;&#x679C;&#x8FDB;&#x7A0B;&#x91CC;&#x53EA;&#x6709;&#x4E00;&#x4E2A; manifest-declared receiver&#xFF0C;&#x5B83;&#x4F1A;&#x88AB;&#x5F53;&#x4F5C;&#x4F4E;&#x4F18;&#x5148;&#x7EA7;&#x8FDB;&#x7A0B;&#x3002;</p>
+<h2 id="&#x6267;&#x884C;&#x65F6;&#x95F4;&#x957F;&#x4E00;&#x70B9;&#x7684;&#x4EFB;&#x52A1;">&#x6267;&#x884C;&#x65F6;&#x95F4;&#x957F;&#x4E00;&#x70B9;&#x7684;&#x4EFB;&#x52A1;</h2>
+<ol>
+<li><p>&#x4F7F;&#x7528; goAsync &#x7ED3;&#x5408; AsyncTask &#x7B49;&#xFF1B;</p>
+<p> &#x6267;&#x884C;&#x65F6;&#x95F4;&#x4ECD;&#x7136;&#x4E0D;&#x8981;&#x8D85;&#x8FC7; 10 &#x79D2;&#x3002;</p>
+</li>
+<li><p>&#x4F7F;&#x7528; JobScheduler &#x8C03;&#x5EA6; JobService&#x3002;</p>
+</li>
+</ol>
+<h2 id="&#x53D1;&#x9001;&#x5E7F;&#x64AD;">&#x53D1;&#x9001;&#x5E7F;&#x64AD;</h2>
+<ol>
+<li><p>sendOrderedBroadcast</p>
+<p> &#x53D1;&#x9001;&#x6709;&#x5E8F;&#x5E7F;&#x64AD;&#xFF0C;&#x4E00;&#x6B21;&#x53EA;&#x6709;&#x4E00;&#x4E2A; receiver &#x63A5;&#x6536;&#x5230;&#xFF0C;&#x63A5;&#x6536;&#x7684;&#x987A;&#x5E8F;&#x7531; intent-filter &#x7684; <code>android:priority</code> &#x5C5E;&#x6027;&#x51B3;&#x5B9A;&#xFF0C;&#x76F8;&#x540C;&#x4F18;&#x5148;&#x7EA7;&#x7684;&#x5219;&#x968F;&#x673A;&#x987A;&#x5E8F;&#x63A5;&#x6536;&#xFF1B;&#x4E00;&#x4E2A; receiver &#x63A5;&#x6536;&#x5230;&#x6709;&#x5E8F;&#x5E7F;&#x64AD;&#x540E;&#x53EF;&#x4EE5;&#x9009;&#x62E9;&#x4E2D;&#x6B62;&#x4F20;&#x9012;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x7EE7;&#x7EED;&#x4F20;&#x9012;&#xFF0C;&#x53EF;&#x4EE5;&#x643A;&#x5E26;&#x5B83;&#x5904;&#x7406;&#x7684;&#x7ED3;&#x679C;&#x3002;</p>
+</li>
+<li><p>sendBroadcast</p>
+<p> &#x53D1;&#x9001;&#x65E0;&#x5E8F;&#x5E7F;&#x64AD;&#xFF0C;&#x53EF;&#x4EE5;&#x540C;&#x65F6;&#x53D1;&#x9001;&#x7ED9;&#x6240;&#x6709; receiver&#xFF0C;&#x8FD9;&#x66F4;&#x9AD8;&#x6548;&#xFF0C;&#x4F46;&#x65E0;&#x6CD5;&#x5F97;&#x5230;&#x5176;&#x5B83; receiver &#x5904;&#x7406;&#x7684;&#x7ED3;&#x679C;&#x3002;</p>
+</li>
+<li><p>LocalBroadcastManager.sendBroadcast</p>
+<p> &#x53D1;&#x9001;&#x5E94;&#x7528;&#x5185;&#x5E7F;&#x64AD;&#x3002;&#x56E0;&#x4E3A;&#x6CA1;&#x6709;&#x8DE8;&#x8FDB;&#x7A0B;&#x901A;&#x4FE1;&#xFF0C;&#x8FD9;&#x66F4;&#x9AD8;&#x6548;&#x66F4;&#x5B89;&#x5168;&#x3002;</p>
+</li>
+</ol>
+<p>&#x53EF;&#x4EE5;&#x901A;&#x8FC7; Intent.setPackage &#x6765;&#x9650;&#x5236;&#x53D1;&#x9001;&#x5E7F;&#x64AD;&#x7ED9;&#x54EA;&#x4E9B;&#x5E94;&#x7528;&#x3002;</p>
+<h2 id="&#x6743;&#x9650;">&#x6743;&#x9650;</h2>
+<p>&#x53D1;&#x9001;&#x5E7F;&#x64AD;&#x65F6;&#x6DFB;&#x52A0;&#x6743;&#x9650;&#xFF0C;&#x5219;&#x53EA;&#x6709;&#x5DF2;&#x7ECF;&#x88AB;&#x6388;&#x4E88;&#x4E86;&#x5BF9;&#x5E94;&#x6743;&#x9650;&#x7684; receiver &#x53EF;&#x4EE5;&#x63A5;&#x6536;&#x5230;&#xFF1B;</p>
+<p>&#x6CE8;&#x518C; receiver &#x65F6;&#x6DFB;&#x52A0;&#x6743;&#x9650;&#xFF0C;&#x5219;&#x53EA;&#x6709;&#x5DF2;&#x7ECF;&#x88AB;&#x6388;&#x4E88;&#x4E86;&#x5BF9;&#x5E94;&#x6743;&#x9650;&#x7684;&#x5E94;&#x7528;&#x53EF;&#x4EE5;&#x53D1;&#x9001;&#x5E7F;&#x64AD;&#x7ED9;&#x8BE5; receiver&#x3002;</p>
+<h2 id="&#x5B89;&#x5168;&#x8003;&#x8651;&#x4E0E;&#x6700;&#x4F73;&#x5B9E;&#x8DF5;">&#x5B89;&#x5168;&#x8003;&#x8651;&#x4E0E;&#x6700;&#x4F73;&#x5B9E;&#x8DF5;</h2>
+<ul>
+<li><p>&#x5982;&#x679C;&#x53EA;&#x662F;&#x5E94;&#x7528;&#x5185;&#x6536;&#x53D1;&#x5E7F;&#x64AD;&#xFF0C;&#x4F7F;&#x7528; LocalBroadcastManager&#x3002;</p>
+</li>
+<li><p>&#x5982;&#x679C;&#x8BB8;&#x591A;&#x5E94;&#x7528;&#x5173;&#x6CE8;&#x4E00;&#x4E2A;&#x5E7F;&#x64AD;&#xFF0C;&#x90A3;&#x53EF;&#x80FD;&#x53D1;&#x51FA;&#x5E7F;&#x64AD;&#x65F6;&#x9020;&#x6210;&#x8BB8;&#x591A;&#x5E94;&#x7528;&#x542F;&#x52A8;&#xFF0C;&#x5F15;&#x8D77;&#x6027;&#x80FD;&#x7528;&#x7528;&#x6237;&#x4F53;&#x9A8C;&#x7684;&#x95EE;&#x9898;&#x3002;&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#x4E0B;&#x4F7F;&#x7528; context-registered receivers &#x4F1A;&#x66F4;&#x597D;&#x3002;&#x6BD4;&#x5982; CONNECTIVEY_ACTION &#x5E7F;&#x64AD;&#x53EA;&#x88AB;&#x5206;&#x53D1;&#x7ED9; context-registered receivers&#x3002;</p>
+</li>
+<li><p>&#x4E0D;&#x8981;&#x7528;&#x9690;&#x5F0F;&#x610F;&#x56FE;&#x5E7F;&#x64AD;&#x654F;&#x611F;&#x4FE1;&#x606F;&#x3002;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x5982;&#x4E0B;&#x65B9;&#x6CD5;&#x6765;&#x9650;&#x5236;&#x63A5;&#x6536;&#x8005;&#xFF1A;</p>
+<ul>
+<li><p>&#x53D1;&#x9001;&#x5E7F;&#x64AD;&#x65F6;&#x6307;&#x5B9A;&#x6743;&#x9650;&#xFF1B;</p>
+</li>
+<li><p>&#x5728; Android 4.0 &#x4EE5;&#x4E0A;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; Intent.setPackage(String) &#x6765;&#x9650;&#x5236;&#x63A5;&#x6536;&#x7684;&#x5E94;&#x7528;&#xFF1B;</p>
+</li>
+<li><p>&#x4F7F;&#x7528; local broadcasts&#x3002;</p>
+</li>
+</ul>
+</li>
+<li><p>&#x53EF;&#x80FD;&#x6709;&#x6076;&#x610F;&#x5E7F;&#x64AD;&#x6765;&#x89E6;&#x53D1;&#x4F60;&#x7684; receivers&#x3002;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x5982;&#x4E0B;&#x65B9;&#x6CD5;&#x6765;&#x9650;&#x5236;&#x6536;&#x5230;&#x5230;&#x7684;&#x5E7F;&#x64AD;&#xFF1A;</p>
+<ul>
+<li><p>&#x6CE8;&#x518C; receiver &#x65F6;&#x6307;&#x5B9A;&#x6743;&#x9650;&#xFF1B;</p>
+</li>
+<li><p>manifest-declared receivers &#x53EF;&#x4EE5;&#x8BBE;&#x7F6E; android:exported &#x4E3A; false &#x6765;&#x5C4F;&#x853D;&#x5E94;&#x7528;&#x5916;&#x7684;&#x5E7F;&#x64AD;&#x3002;</p>
+</li>
+<li><p>&#x4F7F;&#x7528; local broadcasts&#x3002;</p>
+</li>
+</ul>
+</li>
+<li><p>broadcast &#x7684; actions &#x547D;&#x540D;&#x7A7A;&#x95F4;&#x662F;&#x5168;&#x5C40;&#x7684;&#xFF0C;&#x4F7F;&#x7528;&#x4E00;&#x4E2A;&#x4F60;&#x72EC;&#x6709;&#x7684;&#x547D;&#x540D;&#x7A7A;&#x95F4;&#xFF0C;&#x50CF;&#x5305;&#x540D;&#x4E00;&#x6837;&#x3002;</p>
+</li>
+<li><p>onReceive &#x4E00;&#x822C;&#x8FD0;&#x884C;&#x5728;&#x4E3B;&#x7EBF;&#x7A0B;&#xFF0C;&#x6240;&#x4EE5;&#x8981;&#x8FC5;&#x901F;&#x8FD4;&#x56DE;&#x3002;&#x5982;&#x679C;&#x60F3;&#x6267;&#x884C;&#x7A0D;&#x957F;&#x65F6;&#x95F4;&#x7684;&#x4EFB;&#x52A1;&#xFF0C;&#x614E;&#x91CD;&#x542F;&#x52A8;&#x540E;&#x53F0;&#x670D;&#x52A1;&#xFF0C;&#x56E0;&#x4E3A;&#x5728; onReceive &#x8FD4;&#x56DE;&#x540E;&#x6574;&#x4E2A;&#x8FDB;&#x7A0B;&#x7684;&#x5B58;&#x6D3B;&#x65F6;&#x95F4;&#x65E0;&#x6CD5;&#x4FDD;&#x8BC1;&#x3002;&#x5EFA;&#x8BAE;&#x7684;&#x65B9;&#x6CD5;&#x662F;&#xFF1A;</p>
+<ul>
+<li><p>&#x5728; onReceive &#x91CC;&#x8C03;&#x7528; goAsync &#x7136;&#x540E;&#x5C06; BroadcastReceiver.PendingResult &#x4F20;&#x7ED9;&#x540E;&#x53F0;&#x7EBF;&#x7A0B;&#xFF0C;&#x8FD9;&#x5C06;&#x8BA9;&#x8BE5;&#x5E7F;&#x64AD;&#x5728; onReceive &#x8FD4;&#x56DE;&#x540E;&#x4ECD;&#x5904;&#x4E8E;&#x6FC0;&#x6D3B;&#x72B6;&#x6001;&#x3002;&#x8FD9;&#x53EA;&#x662F;&#x4E00;&#x4E2A;&#x9632;&#x6B62; UI &#x7EBF;&#x7A0B;&#x5361;&#x987F;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x6240;&#x6709;&#x5DE5;&#x4F5C;&#x8FD8;&#x662F;&#x8981;&#x5728; 10 &#x79D2;&#x5185;&#x5B8C;&#x6210;&#xFF08;&#x666E;&#x901A; receiver &#x5982;&#x679C;&#x8D85;&#x8FC7; 10 &#x79D2;&#x8FD8;&#x6CA1;&#x8FD4;&#x56DE;&#x4F1A;&#x88AB;&#x7CFB;&#x7EDF;&#x8BA4;&#x4E3A;&#x963B;&#x585E;&#x4E86;&#xFF0C;&#x4F1A;&#x6740;&#x6389;&#x5B83;&#xFF09;&#x3002;</p>
+</li>
+<li><p>&#x4F7F;&#x7528; JobScheduler&#x3002;</p>
+</li>
+</ul>
+</li>
+<li><p>&#x4E0D;&#x8981;&#x5728; onReceive &#x91CC;&#x542F;&#x52A8; Activity&#xFF0C;&#x7528;&#x6237;&#x4F53;&#x9A8C;&#x5F88;&#x5DEE;&#xFF0C;&#x7279;&#x522B;&#x662F;&#x6709;&#x591A;&#x4E2A; receiver &#x90FD;&#x8FD9;&#x4E48;&#x5E72;&#x7684;&#x65F6;&#x5019;&#x3002;&#x53EF;&#x4EE5;&#x8003;&#x8651;&#x4F7F;&#x7528; notification&#x3002;</p>
+</li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="contentprovider.html" class="navigation navigation-prev " aria-label="Previous page: ContentProvider">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="fragment.html" class="navigation navigation-next " aria-label="Next page: Fragment">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"BroadcastReceiver","level":"1.11.2.4","depth":3,"next":{"title":"Fragment","level":"1.11.2.5","depth":3,"path":"android/aosp/components/fragment.md","ref":"android/aosp/components/fragment.md","articles":[]},"previous":{"title":"ContentProvider","level":"1.11.2.3","depth":3,"path":"android/aosp/components/contentprovider.md","ref":"android/aosp/components/contentprovider.md","articles":[]},"dir":"ltr"},"config":{"plugins":["github"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"github":{"url":"https://github.com/mzlogin/skill-tree"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"skill-tree","links":{"sidebar":{"Home":"http://mazhuang.org"}},"gitbook":"*"},"file":{"path":"android/aosp/components/broadcastreceiver.md","mtime":"2018-10-15T05:29:45.448Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-10-15T05:30:30.842Z"},"basePath":"../../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../../gitbook/gitbook.js"></script>
+    <script src="../../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
