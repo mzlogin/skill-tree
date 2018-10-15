@@ -22,3 +22,19 @@ imm.hideSoftInputFromWindow(view.getWindowToken(), 0);
 ```
 
 参考：[Android : 隐藏软键盘](https://blog.csdn.net/doris_d/article/details/52536480)
+
+## Activity 展示时控制软键盘
+
+AndroidManifest.xml
+
+```xml
+<activity android:name=".TestActivity"
+    android:windowSoftInputMode="stateHidden|adustUnspecified" />
+<activity android:name=".DemoActivity"
+    android:windowSoftInputMode="stateAlwaysVisible" />
+```
+
+参考：
+
+* [Handle input method visibility](https://developer.android.com/training/keyboard-input/visibility)
+* [manifest/activity-element](https://developer.android.com/guide/topics/manifest/activity-element)

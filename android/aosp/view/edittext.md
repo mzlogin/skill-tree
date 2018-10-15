@@ -11,6 +11,7 @@
     * [限制只能输入数字，最大长度为 9 位](#限制只能输入数字最大长度为-9-位)
     * [限制只能输入 IP 地址](#限制只能输入-ip-地址)
     * [显示隐藏密码](#显示隐藏密码)
+    * [imeOptions](#imeoptions)
 
 <!-- vim-markdown-toc -->
 
@@ -166,3 +167,32 @@ if (show) {
 
 setInputType 的方法在我尝试的过程中有点问题，表现与预期不一致。
 ```
+
+### imeOptions
+
+举个例子，让软件键盘的回车键变成“搜索”，并且点击的时候执行某特定动作：
+
+```xml
+<EditText
+    ...
+    android:imeOptions="actionSearch"
+    android:inputType="text" />
+```
+
+```java
+editText.setOnEditorActionListener(new TextView.OnEditorActionListener() {
+    @Override
+    public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
+        if ((event != null) && event.getKeyCode() == KeyEvent.KEYCODE_ENTER && event.getAction() == KeyEvent.ACTION_DOWN) {
+            onSearch();
+            return true;
+        } else if (actionId == EditorInfo.IME_ACTION_SEARCH) {
+            onSearch();
+            return true;
+        }
+        return false;
+    }
+});
+```
+
+imeOptions 还可以对应一些其它的值，详见 <https://developer.android.com/reference/android/widget/TextView.html#attr_android:imeOptions>
